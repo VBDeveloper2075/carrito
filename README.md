@@ -40,7 +40,7 @@ styles.css: (Opcional) Estilos CSS para mejorar la apariencia de la aplicación.
 Descarga o Clona este repositorio en tu computadora:
 
 bash
-git clone https://github.com/tuusuario/carrito-de-compras-js.git
+git clone https://github.com/VBDeveloper2075/carrito
 Abre el archivo index.html en tu navegador web preferido:
 
 Navega hasta la carpeta del proyecto.
