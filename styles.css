@@ -1,0 +1,32 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Cards de productos */
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Items del carrito */
+.item-carrito {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.cantidad {
+  display: flex;
+  align-items: center;
+}
+
+.cantidad button {
+  padding: 5px;
+}
+
+.cantidad span {
+  margin: 0 10px;
+}
