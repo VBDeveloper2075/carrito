@@ -2,14 +2,80 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Carrito de Compras</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛒 Mi Carrito - Librería Tech</title>
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-    <h1>Tu Carrito</h1>
-    <div id="carrito"></div>
-    <a href="index.html">Volver a la Tienda</a>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🛒 Mi Carrito de Compras</h1>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="btn-volver">
+                    ← Volver a la Tienda
+                </a>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Contenido principal -->
+    <main class="container">
+        <div class="carrito-container">
+            <!-- Lista de productos en el carrito -->
+            <div class="carrito-items">
+                <h2>Productos en tu carrito</h2>
+                <div id="carrito"></div>
+                <div id="mensaje-vacio" class="mensaje-vacio" style="display: none;">
+                    <div class="icono-vacio">🛒</div>
+                    <h3>Tu carrito está vacío</h3>
+                    <p>Agrega algunos libros increíbles para comenzar</p>
+                    <a href="index.html" class="btn-primary">Ver productos</a>
+                </div>
+            </div>
+
+            <!-- Resumen del pedido -->
+            <aside class="carrito-resumen">
+                <h3>Resumen del pedido</h3>
+                <div class="resumen-detalles">
+                    <div class="resumen-linea">
+                        <span>Productos:</span>
+                        <span id="cantidad-items">0</span>
+                    </div>
+                    <div class="resumen-linea">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0</span>
+                    </div>
+                    <div class="resumen-linea">
+                        <span>Envío:</span>
+                        <span class="envio-gratis">Gratis 🎉</span>
+                    </div>
+                    <hr>
+                    <div class="resumen-linea total">
+                        <span>Total:</span>
+                        <span id="total-final">$0</span>
+                    </div>
+                </div>
+                <button class="btn-finalizar" onclick="finalizarCompra()">
+                    Finalizar Compra
+                </button>
+                <button class="btn-vaciar" onclick="vaciarCarrito()">
+                    Vaciar Carrito
+                </button>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Librería Tech - Proyecto educativo</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="carrito.js"></script>
 </body>
 </html>

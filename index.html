@@ -2,15 +2,49 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tienda - Productos</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Opcional -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 Librería Tech - Los Mejores Libros de Programación</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Mi Tienda</h1>
-    <div id="productos"></div>
+    <!-- Encabezado de la tienda -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>📚 Librería Tech</h1>
+                <p class="tagline">Aprende a programar con los mejores libros</p>
+            </div>
+            <nav class="nav">
+                <a href="carrito.html" class="btn-carrito">
+                    🛒 Ver Carrito
+                    <span id="contador-carrito" class="badge">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
 
-    <a href="carrito.html">Ver Carrito</a>
+    <!-- Contenido principal -->
+    <main class="container">
+        <section class="hero">
+            <h2>Bienvenido a nuestra librería</h2>
+            <p>Descubre los mejores libros para aprender programación y desarrollo web</p>
+        </section>
 
+        <!-- Grid de productos -->
+        <section class="productos-section">
+            <h2 class="section-title">Nuestros Libros</h2>
+            <div id="productos" class="productos-grid"></div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Librería Tech - Proyecto educativo para aprender HTML, CSS y JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="productos.js"></script>
     <script src="script.js"></script>
 </body>
